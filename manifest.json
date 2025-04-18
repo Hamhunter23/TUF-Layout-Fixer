@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "TUF Layout Fixer",
+  "version": "1.0",
+  "description": "Removes sidebar ads and fixes layout on takeuforward.org",
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": ["https://takeuforward.org/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://takeuforward.org/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+} 
